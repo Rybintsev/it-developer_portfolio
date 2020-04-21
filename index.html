@@ -27,6 +27,7 @@
 					<span class="menu-list"><a href="#about">Обо мне</a></span>
 					<span class="menu-list"><a href="#appouch">Специальзация</a></span>
 					<span class="menu-list"><a href="#work">Мои работы</a></span>
+					<span class="menu-list"><a href="#contact">Саязь со мной</a></span>
 				</div>
 				<div class="menu-burger"><span></span></div>
 				<div class="header__icon">
@@ -46,7 +47,7 @@
 				<div class="header__content container">
 					<h1>Привет друг!</h1>
 					<h2>Меня зовут Сергей, и я специализируюсь на FRONT-END разработке!</h2>
-					<div class="header__content-arrow"></div>
+					<a href="#about"><div class="header__content-arrow"></div></a>
 				</div>
 			</div>
 		</header>
@@ -61,13 +62,12 @@
 						<div class="about__screen">
 							<img src="img/about/ava.jpg" alt="">
 						</div>
-						<div class="about__item">
+						<div class="about__life">
 							<img src="img/about/1.png" alt="">
 							<h2>Жизнь</h2>
 							<p>Пью много чая<br>Занимаюсь воркаутом<br>Много битую<br>Не прочь поиграть<br>Негативно отношусь к табаку и алкаголю</p>
 						</div>
-						
-						<div class="about__item">
+						<div class="about__work">
 							<img src="img/about/2.png" alt="">
 							<h2>Работа</h2>
 							<p>Быстрая и качественная вёрстка<br>Адаптация под любые устройства<br>Работаю до 6-8 часов в день<br>Работа ТОЛЬКО на FRONT-END</p>
@@ -77,7 +77,7 @@
 			</section>
 			<section class="appouch" id="appouch">
 				<div class="container">
-					<div class="head__title">
+					<div class="head__title big">
 						<h2>Чем я занимаюсь</h2>
 						<h4>Я являюсь FRONT-END разработчиком, и для этого использую следующие языки:</h4>
 					</div>
@@ -140,55 +140,41 @@
 						<h4></h4>
 					</div>
 					<div class="work__content">
-						<div class="work__item block">
-							<img src="img/work/icon/teleg.png" alt="">
-							<h2>Project Name</h2>
-							<h4>Facebook marketing</h4>
+						<div class="work__block block">
+							<img src="img/work/1.jpg" alt="">
+							<div class="work__item">
+								<div class="work__item-text">
+									<h2>BAK-ONE</h2>
+									<h4>Портфолио команды дизайнеров</h4>
+								</div>
+							</div>
 						</div>
 						<div class="work__block block">
 							<img src="img/work/2.jpg" alt="">
-						</div>
-						<div class="work__item block">
-							<img src="img/work/icon/teleg.png" alt="">
-							<h2>Project Name</h2>
-							<h4>Landing page</h4>
-						</div>
-						<div class="work__block block">
-							<img src="img/work/4.jpg" alt="">
-						</div>
-						<div class="work__block block o-5">
-							<img src="img/work/5.jpg" alt="">
-						</div>
-						<div class="work__item block o-6">
-							<img src="img/work/icon/teleg.png" alt="">
-							<h2>Project Name</h2>
-							<h4>Landing page</h4>
-						</div>
-						<div class="work__block block o-7">
-							<img src="img/work/7.jpg" alt="">
-						</div>
-						<div class="work__item block o-8">
-							<img src="img/work/icon/teleg.png" alt="">
-							<h2>Project Name</h2>
-							<h4>Facebook marketing</h4>
+							<div class="work__item">
+								<div class="work__item-text">
+									<h2>Business</h2>
+									<h4>Портфолио бизнесс компании</h4>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="contact" id="contact">
+			<section class="contact activ" id="contact">
 				<div class="container">
 					<div class="head__title white">
 						<h2>Get Your Free Facebook Analysis Now</h2>
 						<h4>Enter your details below</h4>
 						<div class="circle" id="openContact"></div>
 					</div>
-					<div class="contact__content">
+					<div class="contact__content activ">
 						<div class="cross" id="closeContact"></div>
 						<p>Sit down with our experts to receive a free customized marketing plan for your business + Learn How To Use Google and Facebook to get 5000% ROI or more</p>
 						<form action="name.php" method="POST">
-							<div class="input"><input type="text" name="user_name" placeholder="Your Name"></div>
-							<div class="input"><input type="phone" name="user_phone" placeholder="Contact Number"></div>
-							<div class="input"><input type="text" name="company_name" placeholder="Company Name"></div>
+							<div class="input"><input type="text" name="user_name" placeholder="Ваше имя"></div>
+							<div class="input"><input type="phone" name="user_phone" placeholder="Ваш телефон"></div>
+							<div class="input"><input type="text" name="company_name" placeholder="Ваша почта"></div>
 							<div class="button"><button type="submit">SUBMIT NOW</button></div>
 						</form>
 					</div>
@@ -196,24 +182,6 @@
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="container">
-				<div class="head__title white">
-					<h2>Get in touch</h2>
-				</div>
-				<div class="footer_content">
-					<div class="flex-icon">
-						<div class="icon"><img  src="img/footer/face.png" alt=""></div>
-						<div class="icon"><img  src="img/footer/twitter.png" alt=""></div>
-						<div class="icon"><img  src="img/footer/g+.png" alt=""></div>
-						<div class="icon"><img  src="img/footer/in.png" alt=""></div>
-					</div>
-					<p>Subscribe to our newsletter to stay update with what is new</p>
-					<form class="footer__form" action="name.php" method="POST">
-						<input type="email" placeholder="Email Address">
-						<button type="submit">Subscribe</button>
-					</form>
-				</div>
-			</div>
 			<h2>Cssauthor.com © 2014 All Rights Reserved</h2>
 		</footer>
 

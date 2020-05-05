@@ -11,9 +11,9 @@ $(document).ready(function() {
 	$('.menu-burger').click(function() {
 		$('.header__menu,.menu-burger').toggleClass('active');
 	}),
-	$('#openContact').click(function() {
-		$('.contact__content,.contact').addClass('activ');
-	}),
+	// $('#openContact').click(function() {
+	// 	$('.contact__content,.contact').addClass('activ');
+	// }),
 	$('#closeContact').click(function() {
 		$('.contact__content,.contact').removeClass('activ');
 	}),
@@ -24,16 +24,16 @@ $(document).ready(function() {
 		$(this).removeClass('focus');
 	}),
 	$("a").click(function () {
-	    var elementClick = $(this).attr("href");
-	    var destination = $(elementClick).offset().top;
-	    $('html, body').animate({ scrollTop: destination }, 900);
-	    return false;
+		var elementClick = $(this).attr("href");
+		var destination = $(elementClick).offset().top;
+		$('html, body').animate({ scrollTop: destination }, 900);
+		return false;
 	});
 });
 
 
 $(window).on('scroll', function() {
-	if($(window).scrollTop() >= 50){
+	if($(window).scrollTop() >= 1){
 		$('.header__topnav,.header-bg').addClass('active');
 	}else{
 		$('.header__topnav,.header-bg').removeClass('active');

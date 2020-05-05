@@ -85,13 +85,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 //<ОСНОВНОЙ БЛОК>=======================================================================================================================================================================>
 .header {
-    &__contact {
-        font-family: 'Roboto', sans-serif;
-        width: 100%;
-        height: 49px;
-        box-shadow: 0px 1px 0 0 #e2e2e2;
-        background-color: #f0f2f4;
-    }
     &__topnav {
         position: relative;
         top: 0;
@@ -155,6 +148,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
         }
     }
     &__content-arrow {
+        display: block;
         position: relative;
         top: 70px;
         margin: 0 auto;
@@ -183,49 +177,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
             right: 11px;
             transform: rotate(-40deg);
         }
-    }
-}
-.phone {
-    position: absolute; 
-    right: calc(14% + 290px);
-    top: 22px;
-    font-size: 15px;
-    font-weight: 400;
-    color: #424242;
-    &:before{
-        content: '';
-        position: absolute;
-        left: -21px;
-        top: -3px;
-        background-image: url('../../img/header/icon/phone.png');
-        width: 11px;
-        height: 18px;
-    }
-    &:after{
-        content: '';
-        position: absolute;
-        right: -21px;
-        top: -17px;
-        height: 45px;
-        width: 1px;
-        background-color: #e2e2e2;
-    }
-}
-.mail {
-    position: absolute; 
-    right: calc(14% + 50px);
-    top: 22px;
-    font-size: 15px;
-    font-weight: 400;
-    color: #424242;
-    &:before{
-        content: '';
-        position: absolute;
-        left: -24px;
-        top: -1px;
-        background-image: url('../../img/header/icon/message.png');
-        width: 20px;
-        height: 16px;
     }
 }
 .head-face,
@@ -316,10 +267,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
         object-fit: cover;
     }
     &.active{
-        margin: 80px 0 0;
+        margin: 40px 0 0;
     }
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1300px){
     .menu-burger{
         display: block;
         position: relative;
@@ -889,7 +840,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
         }
     }
     &__content.activ{
-        top: 300px;
+        top: 265px;
         opacity: 1;
         z-index: 5;
     }
@@ -927,6 +878,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
         height: 4px;
         background-color: #fff;
         border-radius: 3px 0 0 3px;
+        transition: ease .5s all 0s;
     }
     &:after{
         content: '';
@@ -938,6 +890,19 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
         height: 4px;
         background-color: #fff;
         border-radius: 0 3px 3px 0;
+        transition: ease .5s all 0s;
+    }
+    &:hover{
+        &:before{
+            width: 30px;
+            left: 50%;
+            transform: translate(-50%, 0) rotate(45deg);
+        }
+        &:after{
+            width: 30px;
+            right: 50%;
+            transform: translate(50%, 0) rotate(-45deg);
+        }
     }
 }
 .cross{
@@ -1005,12 +970,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
         height: 900px;
     }
     .contact__content.activ{
-        top: 335px;
+        top: 265px;
     }
 }
 @media screen and (max-width: 532px){
     .contact__content.activ{
-        top: 370px;
+        top: 265px;
     }
 }
 @media screen and (max-width: 425px){
